@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <title>IUT de Lens</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="projet.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="projet.js"></script>
+
+       <!-- Lien pour mettre l'image en icône d'onglet -->
+    <link rel="icon" type="shortcut image" href="Logo_IUT_Lens.ico"/>
+   </head>
+   <body>
+      <!-- Code de Maud-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+        <a class="navbar-brand" id="menu" href="projet.html">  <img src="Logo_IUT_Lens.svg" height="130" alt="Logo"> </a>
+
+     <!-- Sans le data toggle et le data target le menu ne se déroule pas quand il est caché en apuyant sur le bouton -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span> <!-- Navbar-toggler-icon : apparence du bouton du menu "caché" -->
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> <!-- Cette ligne sert pour cacher les liens dans le menu "caché" -->
+    <div class="navbar-nav">
+
+      <a class="nav-item nav-link active col-lg-7 col-md-3 col-sm-3" href="objectif.html" id="objectifs"> Objectifs <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link col-lg-7 col-md-3 col-sm-3" href="form.html" id="form">Formulaire</a>
+      <a class="nav-item nav-link col-lg-7 col-md-3 col-sm-3" href="cv.html" id="cv">CV</a>
+      <a class="nav-item nav-link col-lg-7 col-md-3 col-sm-3" href="conseils.html" id="conseils">Conseils</a>
+
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-lg-6">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+  <hr class="transparence">
+</div>
+</div>
+</div>
+      
+
+<div class="container-fluid" id="contenu4">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="jumbotron jumbotron-fluid" id="bienvenue">
+    <h2 class="display-4" id="title">International</h2>
+    <p class="lead" id="text1">Dans cette page d'accueil, vous pouvez accéder à deux parties, venir à l'IUT et partir à l'étranger. Ces deux parties sont accessibles en appuyant sur les boutons en dessous.
+</p>
+
+  
+ 
+
+
+<p class="lead row" id="text2">  <a class="col-lg-3 offset-lg-2 col-8 offset-2" href="#ETUDIER">Venir étudier à l'IUT </a> <a class="partir col-lg-3 offset-lg-2 col-8 offset-2" href="#Partir">Partir à l'étranger</a>
+</p>
+  </div>
+</div>
+   
+      
+ <div class="offset-2 col-lg-3 col-12">
+  <img src="Globe.png" alt="image études">
+     </div>
+     </div>
+    </div>
+
+    <button onClick="window.scrollTo(0, 0);" id="scroll">
+        <img src="arrow.svg" alt="flèche">
+    </button>
+ <div class="container-fluid">
+<div class="row">
+<div class="col-12 col-lg-12">
+  <hr class="transparence">
+  <hr class="transparence">
+   </div>
+</div>
+</div>
+<hr>
+<p></p>
+<div class="container-fluid">
+   <div class="row">
+    <div class="jumbotron jumbotron-fluid col-12 col-lg-12"> <!-- j'ai mis une balise style ici avec le background color mais je pense que tu peux le faire directement dans ton css avec la couleur violette de la charte ;) -->
+ <div class="container" id="lesétudes">
+   <h1 class="display-4" id="ETUDIER">VENIR ETUDIER À L'IUT</h1>
+   <p class="lead">Vous trouverez ici toutes les informations nécessaires afin pouvoir venir étudier à l'IUT de Lens.</p>
+ </div>
+</div>
+   </div>
+       </div>
+     <div class="container-fluid" id="contenu3">
+     <hr> <!-- hr ça te fait une ligne sur toute la longueur pour bien distinguer ton texte -->
+<!--Cette partie pour le texte qui va "bouger avec les liens" -->
+     <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+
+              <!--  En dessous c'est pour les liens sur les côtés en colonne, ton menu quoi-->
+                <div class="list-group" id="myScrollspy2">   <!-- J'ai changé l'id par rapport au mieux pour éviter des bugs entre ta partie et la mienne -->
+             <a class="list-group-item" href="#partie1">Les possibilités d'étude en France</a>  <!-- très important ton href doit être le même que ton id à côté du h4 pour chaque partie -->
+             <a class="list-group-item" href="#partie2">Faire valider son niveau de compétence en langue française</a>
+             <a class="list-group-item" href="#partie3">Vie pratique</a>
+          </div>
+       </div>
+       <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+          <div data-spy="scroll" data-target="#myScrollspy2" data-offset="10" id="importante"> <!-- ça c'est la partie qui gère la "boite" où le texte et la barre qui permet de monter/descendre ton texte -->
+             <!-- si la largueur de la boite te convient pas, tu peux changer le height -->
+
+             <h4 id="partie1">LES POSSIBILITÉS D’ÉTUDES EN FRANCE</h4>
+             <div class="partie1text"> <!--Ton texte de la partie 1 va être dans cette div -->
+               <div class="container">
+               Tous les cours à l'IUT de Lens sont dispensés en français. Un bon niveau de compréhension de cette langue est donc fondamentale. En DUT et licence professionnelles, le niveau B2 est nécessaire. Ceci est le niveau visé post-baccalauréat.
+               <p></p>
+               <p></p>
+                « Peut comprendre l’essentiel d’un sujet concret ou abstrait dans un texte complexe, y compris une discussion technique dans sa spécialité. Il peut communiquer avec un degré de spontanéité et d’aisance, par exemple une conversation avec un interlocuteur natif. L’élève peut émettre un avis sur un sujet d’actualité et en débattre » , ministère de l'éducation nationale et de l'enseignement supérieur.
+               <p></p>
+               <p></p>
+               Il y a dans l'IUT 4 filières accessibles aux étudiants étrangers pour venir étudier dans la formation à titre individuel, ou dans le cadre d'une convention signée avec un établissement partenaire de l'IUT pour une formation ciblée.
+               <p></p>
+               <p></p>
+               <span class="gras">Filière commerce :</span>
+               <ul>
+               <li> <a class="lienstext" href="http://www.iut-lens.univ-artois.fr/formations/offre-de-formation/dut/dut-techniques-de-commercialisation/">DUT Techniques de commercialisation (TC)</a> </li>
+               <li> <a class="lienstext" href="http://www.iut-lens.univ-artois.fr/formations/offre-de-formation/licences-professionnelles/licence-professionnelle-commercialisation-des-biens-et-des-services-inter-entreprises-cbsi/">LP Commercialisation de Produits et Services - Commercialisation des Biens et Services Interentreprises </a> </li>
+             </ul>
+               <span class="gras">Filière gestion :</span>
+               <ul>
+                 <li><a class="lienstext" href="http://www.iut-lens.univ-artois.fr/formations/offre-de-formation/dut/dut-gestion-des-entreprises-et-administration/"> DUT Gestion des Entreprises et des Administrations (GEA)</a></li>
+               </ul>
+               <span class="gras">Filière informatique :</span>
+               <ul>
+                 <li> <a class="lienstext" href="http://www.iut-lens.univ-artois.fr/formations/offre-de-formation/dut/dut-informatique/">DUT informatique</a> </li>
+               </ul>
+               <span class="gras">Filière medias numériques :</span>
+               <ul>
+                 <li> <a class="lienstext" href="http://www.iut-lens.univ-artois.fr/formations/offre-de-formation/dut/dut-metiers-du-multimedia-et-de-linternet/">DUT Métiers du Multimedia et de l'Internet (MMI)</a> </li>
+                 <li> <a class="lienstext" href="http://www.iut-lens.univ-artois.fr/formations/offre-de-formation/licences-professionnelles/lp-tais-specialite-conception-web-et-produits-multimedias/">LP Métiers du Numérique : conception, rédaction et réalisation web - Conception, Rédaction et Réalisation web</a> </li>
+               </ul>
+             <p></p>
+                  <!-- Certains liens ne sont pas disponibles car l'accès au site de l'IUT durant cette semaine était très compliqué (erreur de la base de données du site) -->
+
+             </div>
+             </div>
+
+             <h4 id="partie2">FAIRE VALIDER SON NIVEAU DE COMPÉTENCE EN LANGUE FRANÇAISE</h4>
+             <div class="partie2text">
+               <div class="container">
+                 Il est possible de passer des diplômes ou tests qui évaluent son niveau pour toute personne qui n'a pas la nationalité française et qui souhaite faire certifier ses compétences en langue française.
+                 L'Université de Lille organise des examens DELF-DALF crées par le Ministère de l'Education Nationale.
+                 <p></p>
+                 <p></p>
+                 Les 6 diplômes qui constituent le DELF (Diplôme d'Études en Langue Française) et le DALF (Diplôme Approfondi de Langue Française) sont totalement indépendants.
+                 Le candidat peut donc, en fonction de son niveau, s'inscrire à l'examen de son choix.
+                 À chaque niveau, les 4 compétences sont évaluées : compréhension orale et production orale, compréhension écrite et production écrite.
+                 <p></p>
+                 <ul>
+                   <li>Le DELF A1 : la valorisation des premiers acquis</li>
+                   <li>Le DELF A2 : le niveau de « survie », la compétence élémentaire</li>
+                   <li>Le DELF B1 : le niveau seuil</li>
+                   <li>Le DELF B2 : l’utilisateur indépendant</li>
+                 </ul>
+                 <p>Le DALF : Diplôme Approfondi de Langue Française</p>
+                 <ul>
+                   <li>Le DALF C2 : la maîtrise</li>
+                 </ul>
+                   Pour plus d’informations (calendrier, tarif, modalités d’organisation , etc.) <a class=color href="http://www.cue-lillenorddefrance.fr/?q=international-etudiants-delf-dalf-francais-langue-etrangere">cliquer ici</a>
+                  <p></p>
+               </div>
+
+           </div>
+
+             <h4 id="partie3">VIE PRATIQUE</h4>
+             <div class="partie3text">
+               <div class="container">
+               Les étudiants venant à l’IUT de Lens – Université d’Artois dans le cadre d’un accord de coopération (ex : convention, accord Erasmus+) trouveront sur le site de l’Université d’Artois, rubrique « International » les modalités de préparation et de déroulement du séjour.
+               <div class="row">
+                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+               <b>Avant votre départ :</b>
+               <ul>
+                 <li>Dossier de candidature</li>
+                 <li>Visa</li>
+               </ul>
+               <a class="lienstext" href="http://www.univ-artois.fr/international/etudier-a-l-universite-d-artois/avant-votre-depart">plus d'informations</a>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+               <span class="gras">À votre arrivée :</span>
+               <ul>
+                 <li>Inscription administrative</li>
+                 <li>Inscription pédagogique</li>
+                 <li>Titre de séjour</li>
+               </ul>
+               <a class="lienstext" href="http://www.univ-artois.fr/international/etudier-a-l-universite-d-artois/a-votre-arrivee">plus d'informations</a>
+               </div>
+               </div>
+                 Pour les étudiants venant étudiant à l'IUT à titre individuel, la candidature se passe dans le cadre de postbac et campus France : <a class="lienstext" href="http://www.univ-artois.fr/international/venir-etudier-luniversite-dartois/titre-individuel">voir la rubrique inscription.</a>
+                 <p></p>
+                 <p></p>
+                 <span class="gras">Vie étudiante</span>
+                 <p></p>
+                 Le site du Ministère des affaires étrangères français propose un site Web « étudier en France » qui donnera de nombreuses informations sur :
+                 <ul>
+                   <li>Quelles formations choisir : l’organisation du système éducatif français</li>
+                   <li>Comment financer le projet ?</li>
+                   <li>Comment apprendre le français ?</li>
+                   <li>Quelles démarches administratives ?</li>
+                   <li>La vie en France : guide pratique, logement, travail, vie culturelle</li>
+                   <li>Carnet d’adresse</li>
+                 </ul>
+                 <a class="lienstext" href="http://www.univ-artois.fr/Vie-etudiante/Vie-pratique">plus d'informations</a>
+
+                 <p></p>
+                 <p></p>
+
+                 <h5 class="color">Liens utiles</h5>
+                 <ul>
+                   <li><a target="_blank" class="lienstext" href="http://www.univ-artois.fr/international">Site des relations internationales de l’Université d’Artois pour les étudiants venant dans le cadre d’une convention</a> </li>
+                   <li><a target="_blank" class="lienstext" href="https://www.campusfrance.org/fr">Agence nationale pour la promotion de l’enseignement supérieur français à l’étranger
+</a> </li>
+                   <li><a target="_blank" class="lienstext" href="https://www.diplomatie.gouv.fr/fr/venir-en-france/etudier-en-france/">Ministère des affaires étrangères comporte une partie étudier en France
+</a> </li>
+                   <li><a target="_blank" class="lienstext" href="http://www.monetos.fr/">Portail international des formalités administratives (médecin, logement, ouvrir un compte à l’étranger)
+</a> </li>
+                   <li><a target="_blank" class="lienstext" href="http://www.esn.org/">Erasmus Student Network
+</a> </li>
+                   <li><a target="_blank" class="lienstext" href="http://www.univ-lille-nord-de-france.fr/ray-international/FLE.html">Français langue étrangère dans l’académie de Lille</a> </li>
+                 </ul>
+             </div>
+             </div>
+
+          </div>
+       </div>
+    </div>
+    <p></p>
+  <hr>
+  <p></p>
+ </div>
+
+
+
+      <div class="container-fluid" id="contenu1">
+        <div class="jumbotron jumbotron-fluid" id="orange">
+  <div class="container">
+    <h2 class="display-4" id="Partir"> PARTIR À L'ÉTRANGER</h2>
+    <p class="lead">Dans cette partie vous trouverez les informations suivantes : les études et les stages à l’étranger, les personnes pouvant bénéficier d’une expérience à l’étranger, les moyens pour postuler, le niveau de langues et les aides financières.
+</p>
+  </div>
+</div>
+         <hr>
+         <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+               <div class="list-group" id="myScrollspy">
+                  <a class="list-group-item" href="#études">Les études à l'étranger</a>
+                  <a class="list-group-item" href="#stage">Les stages à l'étranger</a>
+                  <a class="list-group-item" href="#liens">Partenaires de l'IUT</a>
+                  <a class="list-group-item" href="#bénéficie">Les bénéficaires de cette expérience</a>
+                  <a class="list-group-item" href="#postuler">Les moyens de postuler</a>
+                  <a class="list-group-item" href="#langues">Le niveau de langues</a>
+                  <a class="list-group-item" href="#aides">Les aides financières</a>
+               </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+             <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" id="important">
+                <h3 id="études">LES ETUDES A L'ETRANGER</h3>
+<div class="étudestext">
+        La possibilité de faire un stage à l’étranger est réservée aux étudiants volontaires au cours de leur deuxième année de DUT ou effectuant une année de licence professionnelle.
+        Il est obligatoire que les étudiants déposent leurs candidatures durant l’année qui précède leur départ.
+        <p></p>
+        <a href="http://www.univ-artois.fr/international/partir-etudier-letranger/candidature-et-selection" class="color">Toutes les informations sur les modalités dans ce lien</a>
+        <p></p>
+        <p></p>
+        <h4>Les établissements partenaires de l’IUT</h4>
+
+<span class="gras">L’université du Québec à Chicoutimi - convention bilatérale</span>
+<p></p>
+Pour un semestre, les étudiants de l’IUT, en remplacement d’un semestre effectué dans notre établissement, peuvent étudier à l’UQAC. Pour chaque étudiant candidat, un ensemble de 5 cours sera choisi et suivi dans l’université partenaire. Pour valider son semestre à l’IUT, l’étudiant doit valider son semestre à Chicoutimi équivalent à celui de base.
+<p></p>
+<div id="heading1" class="panel-heading">
+<a href="#collapse1" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse1" class="panel-collapse collapse in">
+<div class="panel-body">
+<ul>
+<li>  <span class="gras">Public :</span> étudiants de tous les départements en DUT2 – semestre 4 </li>
+<li>  <span class="gras">Nombre d’étudiants :</span>3 places, possibilité de places supplémentaires selon les années</li>
+<li>  <span class="gras">Langue de travail :</span>le français </li>
+<li>  <span class="gras">Période de mobilité :</span> : début janvier jusqu'à fin avril </li>
+</ul>
+</div>
+</div>
+<p></p>
+
+<span class="gras">CREPUQ-BCI = Conférence des Recteurs Et Principaux des Universités du Québec</span> <p></p>
+Les Universités du Québec, essentiellement francophones en plus d’une anglophone, sont regroupés dans la CREPUQ.
+Les étudiants étant intéressés pour passer leur semestre dans l’une des institutions du CREPUQ doivent déposer une candidature. Elle doit se faire auprès du Service des Relations Internationales de l’Université d’Artois en suivant une procédure précise. Elle doit aussi être déposée l’année précédant le départ de l’étudiant.
+<p></p>
+<div id="heading2" class="panel-heading">
+<a href="#collapse2" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse2" class="panel-collapse collapse in">
+<div class="panel-body"><ul>
+<li> <span class="gras"> Public :</span> étudiants de tous les départements en DUT2 – semestre 4 </li>
+<li> <span class="gras">Nombre d’étudiants :</span> non limité</li>
+<li> <span class="gras">Langue de travail :</span> le français ou l'anglais</li>
+<li> <span class="gras"> Période de mobilité :</span> début janvier jusqu'à fin avril </li>
+</ul>
+</div>
+</div>
+<p></p>
+
+
+
+
+<span class="gras">Institute of Technology Sligo (Irlande) – programme Erasmus+</span>
+<p></p>
+Cette institution se situe au Nord-Ouest de l’Irlande.
+<p></p>
+<div id="heading3" class="panel-heading">
+<a href="#collapse3" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse3" class="panel-collapse collapse in">
+<div class="panel-body">
+<ul>
+<li> <span class="gras">Public :</span> étudiants de la licence professionnelle Métiers du Tourisme : Commercialisation des produits touristiques – Commercialisation des Infrastructures Touristiques, d’Hébergement, Culturelles et Sportives. </li>
+<li> <span class="gras">Nombre d’étudiants :</span>  3 étudiants</li>
+<li> <span class="gras">Langue de travail :</span> l’anglais niveau B2</li>
+<li> <span class="gras">Période de mobilité :</span> début janvier jusqu'à fin avril </li>
+</ul>
+</div>
+</div>
+<p></p>
+
+<span class="gras">Dundalk Institute of Technology – programme Erasmus+</span>
+<p></p>
+L’institut de Dundalk se trouve dans le Nord-Est de l’Irlande.
+<p></p>
+<div id="heading4" class="panel-heading">
+<a href="#collapse4" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse4" class="panel-collapse collapse in">
+<div class="panel-body">
+<ul>
+<li> <span class="gras"> Public :</span> étudiants de DUT Informatique ou MMI et de la licence professionnelle Métiers du Tourisme : Commercialisation des produits touristiques – Commercialisation des Infrastructures Touristiques, d’Hébergement, Culturelles et Sportives. </li>
+<li> <span class="gras">Nombre d’étudiants :</span>  1 étudiant (INFO & MMI) et 1 étudiant de LP CITHECS </li>
+<li> <span class="gras">Langue de travail :</span> l’anglais niveau B1 </li>
+<li> <span class="gras"> Période de mobilité :</span> début janvier jusqu'à fin avril </li>
+</ul>
+</div>
+</div>
+<p></p>
+
+<span class="gras">Université Pablo Olavide – Séville (Espagne) – programme Erasmus+</span>
+<p></p>
+L’université Pablo Olavide se trouve en Espagne, à Séville.
+<p></p>
+<div id="heading5" class="panel-heading">
+<a href="#collapse5" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse5" class="panel-collapse collapse in">
+<div class="panel-body">
+<ul>
+<li>  <span class="gras">Public :</span> DUT TC et GEA </li>
+<li>  <span class="gras">Nombre d’étudiants :</span> 2 étudiants </li>
+<li>  <span class="gras">Langue de travail :</span> l’espagnol niveau B1 </li>
+<li>  <span class="gras">Période de mobilité :</span> début janvier jusqu'à fin avril </li>
+</ul>
+</div>
+</div>
+<p></p>
+</div>
+<h3 id="stage">LES STAGES À L'ETRANGER</h3>
+<div id="stagetext">
+Sous la forme de projet de fin d’études, les étudiants ont la possibilité de faire leur stage de fin de 2e année de DUT ou de licence professionnelle dans un établissement partenaire de l’IUT, plus précisément dans un laboratoire universitaire. Cependant, l’étudiant peut aussi trouver son stage par ses propres moyens.
+Dans le cadre d’un partenariat avec l’IUT, les étudiants en DUT 1 doivent postuler pour leur stage de 2e année en juin. Pour les étudiants de Licence Professionnelle, ils doivent postuler en septembre pour avoir leur stage.
+<p></p>
+<p></p>
+<h4>Les établissements partenaires</h4>
+<span class="gras">Institut technologique de Larissa (Grèce) – programme Erasmus+ projet de fin d’études</span>
+<p></p>
+Les étudiants de l’IUT sont accueillis dans le TEI de Larissa en Grèce dans le cadre d’un projet en laboratoire universitaire. Les étudiants devront travailler sur la programmation web.
+<p></p>
+<div id="heading6" class="panel-heading">
+<a href="#collapse6" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse6" class="panel-collapse collapse in">
+<div class="panel-body">
+                    <ul>
+                    <li>  <span class="gras">Public :</span> DUT INFO et MMI </li>
+                    <li>  <span class="gras">Nombre d’étudiants :</span> 2 étudiants </li>
+                    <li>  <span class="gras">Langue de travail :</span> l’anglais niveau B1 </li>
+                    <li>  <span class="gras">Période de mobilité :</span> début avril à fin juin </li>
+                    </ul>
+</div>
+</div>
+<p></p>
+<span class="gras">Université technologique de Varsovie (Pologne) – programme Erasmus+ projet de fin d’études</span>
+Encadrés par des informaticiens du monde de l’entreprise, les étudiants de l’IUT sont accueillis par l’Université technologique de Varsovie. Ils pourront réaliser leur projet en laboratoire universitaire.
+<p></p>
+<div id="heading7" class="panel-heading">
+<a href="#collapse7" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse7" class="panel-collapse collapse in">
+<div class="panel-body">
+<ul>
+                    <li>  <span class="gras">Public :</span> DUT INFO et MMI </li>
+                    <li>  <span class="gras">Nombre d’étudiants :</span> 4 étudiants </li>
+                    <li>  <span class="gras">Langue de travail :</span> l’anglais niveau B2 </li>
+                    <li>  <span class="gras">Période de mobilité :</span> début avril à fin juin </li>
+</ul>
+</div>
+</div>
+<p></p>
+<span class="gras">Université de l’Ouest de Timisoara (Roumanie) – programme Erasmus+ projet de fin d’études</span>
+<p></p>
+L’Université de Timisoara, dans le cadre d’un projet en laboratoire universitaire, accueille les étudiants de l’IUT pour leur stage. La programmation web ou la conception de jeux pourront être traités par les étudiants en stage.
+<p></p>
+<div id="heading8" class="panel-heading">
+<a href="#collapse8" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse8" class="panel-collapse collapse in">
+<div class="panel-body">
+<ul>
+                    <li>  <span class="gras">Public :</span> DUT INFO et MMI </li>
+                    <li>  <span class="gras">Nombre d’étudiants :</span> 2 étudiants </li>
+                    <li>  <span class="gras">Langue de travail :</span> l’anglais niveau B1 </li>
+                    <li>  <span class="gras">Période de mobilité :</span> début avril à fin juin </li>
+</ul>
+</div>
+</div>
+<p></p>
+<span class="gras">Fédération des Kosen du Tohoku (Japon) – convention de stage</span>
+<p></p>
+Les IUT en France sont comparables aux Kosen au Japon. L’IUT de Lens possède de nombreux partenaires : Iwaki, Sendai, Ichinoseki, Akita, Aomori et Hakodate. Dans le cadre d’un stage en laboratoire, les sujets de celui-ci peuvent varier. Ils sont adaptés aux souhaits et aux CV des étudiants.
+<div id="heading9" class="panel-heading">
+<a href="#collapse9" data-toggle="collapse" data-parent="#accordion" class="color"> Plus de détails </a>
+</div>
+<div id="collapse9" class="panel-collapse collapse in">
+<div class="panel-body">
+                    <ul>
+        <li>  <span class="gras">Public :</span> DUT INFO et MMI</li>
+        <li>  <span class="gras">Nombre d’étudiants :</span> 6 étudiants</li>
+        <li>  <span class="gras">Langue de travail :</span> l’anglais niveau B1</li>
+        <li>  <span class="gras">Période de mobilité :</span> début avril à fin juin</li>
+        </ul>
+</div>
+</div>
+</div>
+<p></p>
+
+<h3 id="liens">PARTENAIRES DE L'IUT</h3>
+<div class="lienstext">
+<span class="gras"> Études à l'étranger </span>
+<ul class="lienstar">
+<li>  <a target="_blank" href="https://www.uqac.ca/">Site web de l'Université du Québec à Chicoutimi</a></li>
+<li>  <a target="_blank" href="https://echanges-etudiants.bci-qc.ca/">Site web de la CREPUG - BCI</a></li>
+<li>  <a target="_blank" href="https://www.itsligo.ie/">Site web Instute of Technology Sligo</a></li>
+<li>  <a target="_blank" href="https://www.dkit.ie/">Site web Dundalk Institute of Technology</a></li>
+<li>  <a target="_blank" href="https://www.upo.es/portal/impe/web/portada/index.html">Site web Université Pablo Olavide - Séville</a></li>
+</ul>
+<span class="gras">Stages à l'étranger </span>
+<ul>
+<li>  <a target="_blank" href="http://www.teilar.gr/index_en.php">Site web Institut Technologique de Larissa</a>
+<li>  <a target="_blank" href="https://www.pw.edu.pl/engpw">Site web de l'Université technologique de Varsovie</a>
+<li>  <a target="_blank" href="https://www.uvt.ro/fr/">Site web de l'Université de l'Ouest à Timisoara</a></li>
+<li>  <a target="_blank" href="http://www.cvm.qc.ca/Pages/index.aspx">Site web Cegep du vieux Montréal</a></li>
+<li>  <a target="_blank" href="https://www.kosen-k.go.jp/">Site web de la Fédération des Kosen du Tohoku</a></li>
+</ul>
+&rarr; <a target="_blank" href="http://www.univ-artois.fr/international/partir-etudier-letranger/candidature-et-selection" class="color"> Toutes les modalités dans ce lien </a>
+</div>
+<p></p>
+
+<h3 id="bénéficie">LES BENEFICIAIRES DE CETTE EXPERIENCE</h3>
+<div class="bénéficietext">
+Une expérience à l’étranger est possible dès la première année d’étude. L’étudiant peut faire un stage de courte durée, et il doit trouver son stage lui-même. En deuxième année de DUT ou de licence, les étudiants peuvent aussi en effectuer une. Ils ne doivent pas effectuer une alternance. L’IUT possède de nombreux contacts dont les étudiants peuvent bénéficier. Rien n’empêche les étudiants de trouver leur stage eux-même.
+</div>
+<p></p>
+<h3 id="postuler">LES MOYENS DE POSTULER</h3>
+<div class="postulertext">
+Pour informer les étudiants pour les démarches à faire selon le pays choisi, l’IUT organise de nombreuses réunions informatives. Les étudiants bénéficient d’aide pour leur dossier, leur candidature et la préparation de leur séjour à l’étranger. L’IUT les accompagne du début du processus jusqu’à la fin.
+<p></p>
+<a target="_blank" href="http://www.univ-artois.fr/international/partir-etudier-letranger/candidature-et-selection" class="color"> Dépôt de candidature accessible avec ce lien </a>
+</div>
+<p></p>
+
+<h3 id="langues">LE NIVEAU DE LANGUES</h3>
+<div class="languestext">
+Avant de partir, les étudiants doivent s’informer sur le niveau de langue qui est exigé dans leur lieu de destination. Ils peuvent avoir des informations grâce à celles données par l’IUT. Les étudiants peuvent consulter les critères du <a href="https://rm.coe.int/16802fc3a8" class="color"> Cadre Européen de Référence pour les langues</a> par rapport à la destination choisie.
+  <p></p>
+  Les étudiants bénéficient d’évaluations de leur niveau par les professeurs de langue des département de l’IUT. Ils peuvent aussi bénéficier de tests de niveau gratuits à la <a href="http://www.univ-artois.fr/formations/la-maison-des-langues" class="color"> Maison des Langues de l’Université d’Artois </a>. Elle propose aussi des ateliers de renforcement pour ceux qui en ont besoin.
+</div>
+<p></p>
+
+<h3 id="aides">LES AIDES FINANCIERES</h3>
+<div class="aidestext">
+  Pour les étudiants souhaitant bénéficier d’aides financières pour leur mobilités d’études ou de stage, ils peuvent en bénéficier. En fonction des financements, les montants et les conditions d’éligibilité peuvent varier. Pour s’informer, les étudiants peuvent assister aux réunions d’informations de l’IUT. Ils peuvent aussi avoir des informations sur <a href="http://www.univ-artois.fr/international/partir-etudier-letranger/financements" class="color">les financements et les modalités de demande auprès du Service des Relations Internationales de l’Université d’Artois.</a>
+</div>
+<p></p>
+
+</div>
+</div>
+</div>
+<hr>
+</div>
+<p></p>
+ <footer class="page-footer font-small unique-color-dark"> <div id="footer"> <div class="container">
+      <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Rejoignez nous sur les réseaux sociaux !</h6>
+
+        </div>
+          <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+              <a class="icon facebook" href="https://www.facebook.com/IUT.DE.LENS/Facebook" target="_blank"> <img src="facebook.svg" alt="logo de facebook" class="col-2"> </a>
+              <a class="icon youtube" href="https://www.youtube.com/user/servicecomiut" target="_blank"> <img src="youtube.svg" alt="logo de Youtube" class="col-2 offset-1"> </a>
+              <a class="icon linkedin" href="https://www.linkedin.com/school/iut-de-lens/about/" target="_blank"> <img src="linkedin.svg" alt="logo de Linkedin" class="col-2 offset-1"> </a>
+                <a class="icon Twitter" href="https://twitter.com/IUTdeLens/" target="_blank"> <img src="twitter.svg" alt="logo de Twitter" class="col-2 offset-1"></a>
+      </div>
+    </div>
+      </div>
+    </div>
+
+   <div class="container text-center text-md-left mt-5" id="contenu2">
+    <div class="row mt-3">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">IUT de Lens</h6>
+        <hr>
+        Accéder à l'<a target="_blank" href="https://www.gestionedt.emploisdutempssrc.net/edt/semaine/INFO/2020-01-13">EDT</a>, ou l'<a target="_blank" href="http://ent.univ-artois.fr/uPortal/f/u29l1s43/normal/render.uP">ENT</a> ou <a target="_blank" href="http://moodle.univ-artois.fr/cours/">Moodle</a>
+        <p></p>
+        <p></p>
+        <img src="univartois.png" alt="Logo de l'université artois">
+
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Liens</h6>
+        <hr>
+          <a href="objectif.html">Objectifs</a>
+          <p></p>
+          <p></p>
+          <a href="cv.html">CV</a>
+          <p></p>
+          <p></p>
+          <a href="form.html">Formulaire</a>
+          <p></p>
+          <p></p>
+          <a href="conseils.html">Conseils</a>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr>
+        <p class="adresse mr-3"><span class="gras">Adresse </span>:<p class="petit"></p>
+            Rue de l’université<p class="petit"></p>
+            SP 16<p class="petit"></p>
+            62307 LENS Cedex<p class="petit"></p>
+            FRANCE<p></p>
+          <p class="tel mr-3"> <span class="gras">Tel </span>: +33 (0)3 21 79 32 32</p>
+      </div>
+    </div>
+  </div>
+<div class="text-center py-3" id="ref">
+© 2020 IUT de Lens
+</div>
+<!-- Merci d'avoir lu notre projet -->
+</footer>
+</body>
+</html>

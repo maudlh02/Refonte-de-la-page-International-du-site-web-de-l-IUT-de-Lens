@@ -1,0 +1,268 @@
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size:17px;
+}
+
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.petit {
+  margin-bottom: 2%;
+}
+
+.transparence {
+  opacity:0
+}
+
+#contenu4 a{
+    text-decoration: none;
+    margin-top: 5%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 5%;
+    border: solid 2px white;
+    font-size:17px;
+    text-align:center;
+ 
+}
+
+
+#contenu4 #text2 .partir a{
+    background-color:red;
+}
+
+#contenu4 a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.nav-item {
+  margin-right:20px;
+}
+
+#carousel-inner {
+  margin-top:100%;
+}
+
+.col-lg-3{
+    height: 20%;
+}
+
+nav{
+    background-color: white;
+    text-align: center;
+}
+
+#objectifs{
+    background-color: #00AF9E;
+    color: black;
+    border-radius: 5%;
+}
+
+#cv{
+    background-color: #E71D73;
+    color: black;
+    border-radius: 5%;
+}
+
+#form{
+    background-color: #EB8915;
+    color: black;
+    border-radius: 5%;
+}
+
+#conseils {
+  background-color: rgb(162,67,146);
+  color: black;
+  border-radius: 5%;
+}
+
+#ref {
+  background:rgba(162,67,146,0.6);
+  color: black;
+}
+
+#footer {
+  background-color: rgba(245,143,10,0.6);
+}
+
+
+#bienvenue{
+    background-color: #00AF9E;
+    color: white;
+}
+
+#bienvenue #title {
+  margin-left:10%;
+}
+
+#bienvenue #text1 {
+  margin-left:10%;
+  margin-right:10%;
+}
+
+#boutton1 {
+  margin-left:5%;
+  background-color:rgb(162,67,146);
+  font-weight:bold;
+  font-size: 15px;
+  border:black;
+}
+
+#boutton2 {
+  background-color:rgb(245,143,10);
+  font-weight:bold;
+  font-size: 15px;
+  border:black;
+}
+
+
+#scroll{
+    opacity: 70%;
+    position: fixed;
+    right: 1%;
+    top: 90%;
+}
+
+#etranger{
+    text-align: center;
+}
+
+#venir{
+    background-color: #00AF9E;
+    color: black;
+    border-radius: 5%;
+}
+
+#partir{
+    background-color: #E71D73;
+    color: black;
+    border-radius: 5%;
+}
+
+
+#myScrollspy {
+  font-size: 20px;
+}
+
+#contenu1 .list-group-item.active {
+background-color:rgb(245,143,10);
+border-color:rgb(245,143,10);
+color:white;
+}
+
+#contenu1 a.list-group-item{
+color:rgb(245,143,10);
+font-weight: bold;
+}
+
+#contenu1 .gras {
+font-weight: bold;
+}
+
+#contenu4 .gras {
+  font-weight: bold;
+}
+
+#contenu1 .color {
+color:rgb(245,143,10);
+}
+
+#contenu1 h3 {
+color:rgb(245,143,10);
+}
+
+#contenu1 h4 {
+color:rgb(245,143,10);
+}
+
+#contenu1 .lienstext, a {
+color:black;
+}
+
+#contenu1 .lienstext, a:hover {
+color:rgb(245,143,10);
+}
+
+#contenu2 a:hover {
+color:rgb(4,72,130)
+}
+
+#contenu4 a  {
+color:white;
+}
+
+#importante {
+ height:700px;
+ overflow-y: scroll;
+ padding:5px;
+ border: 1px solid #ccc;
+}
+
+#important {
+ height:700px;
+ overflow-y: scroll;
+ padding:5px;
+ border: 1px solid #ccc;
+}
+
+
+
+#orange {
+background-color:rgb(245,143,10);
+}
+
+.lead {
+  color:white;
+}
+
+#myScrollspy2 {
+  font-size: 20px;
+}
+
+#contenu3 .list-group-item.active {
+background-color:rgb(162,67,146);
+border-color:rgb(162,67,146);
+color:white;
+}
+
+#contenu3 a.list-group-item{
+color:rgb(162,67,146);
+font-weight: bold;
+}
+
+#contenu3 .gras {
+font-weight: bold;
+}
+
+#contenu3 .color {
+color:rgb(162,67,146);
+}
+
+#contenu3 h3,h4{
+color:rgb(162,67,146);
+}
+
+
+#contenu3 .lienstext, a:hover {
+color:rgb(162,67,146);
+}
+
+ .jumbotron {
+   background-color:rgb(162,67,146);
+   color:white;
+ }
+
+.gras {
+  font-weight: bold;
+}
+
+#partie1 #partie2 #partie3 {
+  font-size:14px;
+}
